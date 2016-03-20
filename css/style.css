@@ -4,15 +4,16 @@
 
 body {
   font-family: Ubuntu;
-  
+
   color: #404040;
-  
+  margin-top: 50px;
+
 }
 
 
 
 h1 {
-  
+
   color: white;
   margin: auto;
   font-family: Ubuntu;
@@ -20,13 +21,33 @@ h1 {
   max-width: 800px;
   text-align: center;
 
-  
+
 }
+
+.navbar-brand {
+	text-decoration: none;
+}
+
+.navbar-brand a  {
+	text-decoration: none;
+	color: #868686;
+}
+
+.navbar-brand a:hover {
+
+	color: #efefef;
+}
+
+.navbar {
+  background-color: rgba(64, 64, 64, .8);
+  border-bottom: none;
+}
+
 
 .header {
   margin: auto;
   text-align: center;
-  
+
 }
 
 /* the styling of the actual app */
@@ -38,7 +59,7 @@ h1 {
   opacity: 0.8;
   color: #fff;
   //box-shadow: 10px 10px 3px #888888;
-  
+
 }
 
 .thefirstline div {
@@ -61,7 +82,7 @@ h1 {
   font-size: 1000%;
   text-align: center;
   padding: 0px 10px 10px 10px;
-    
+
   }
 
 .thesecondline {
@@ -94,7 +115,7 @@ h1 {
 }
 
 .active {
-  
+
   font-size: 25px;
 }
 

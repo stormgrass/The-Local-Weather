@@ -25,7 +25,7 @@ function nth(d) {
 //fixing the time
 function minuteDisplay() {
   if (dt.getMinutes() < 10) {
-    return ('0' + dt.getMinutes())
+    return ('0' + dt.getMinutes());
   } else return dt.getMinutes();
 }
 var time = dt.getHours() + ":" + minuteDisplay();
@@ -47,29 +47,29 @@ if (navigator.geolocation) {
 //putting in location, temperature and condition
         $('#thelocation').html(json.name);
         $('#thetemp').html(Math.round(json.main.temp));
-        
+
         $('#condition').html(json.weather[0].description);
-        
-        
-        
+
+
+
 //getting the right class for my icon
-        //complicating it by 
+        //complicating it by
 
   function iconClass() {
                     var timeStamp = Math.floor(Date.now() / 1000);
-                    var newClassDay = ('wi-owm-day-' + json.weather[0].id)
-                    var newClassNight = ('wi-owm-night-' + json.weather[0].id)
-                    if ((timeStamp > json.sys.sunrise) && (timeStamp < json.sys.sunset)) 
+                    var newClassDay = ('wi-owm-day-' + json.weather[0].id);
+                    var newClassNight = ('wi-owm-night-' + json.weather[0].id);
+                    if ((timeStamp > json.sys.sunrise) && (timeStamp < json.sys.sunset))
                     return newClassDay;
-                    
+
                     else return newClassNight;
-   
-  
-  }       
-//putting that icon there        
-$('#thesymbol').addClass(iconClass());         
-               
-        
+
+
+  }
+//putting that icon there
+$('#thesymbol').addClass(iconClass());
+
+
 //the background switcher
         switch (json.weather[0].main) {
           case 'Rain':
@@ -99,15 +99,15 @@ $('#thesymbol').addClass(iconClass());
           default: $("body").css("background", "url('http://hemmer.tv/weather/atmosphere.jpg')");
 
         }
-      //the Celsius button  
+      //the Celsius button
         $('#Celsius').click(function() {
           $('#thetemp').html(Math.round(json.main.temp));
           $('#Celsius').addClass('active');
           $('#Fahrenheit').removeClass('active');
-          $('#Fahrenheit').insertAfter('#Celsius')
-          
+          $('#Fahrenheit').insertAfter('#Celsius');
+
         });
-      //the Fahrenheit button  
+      //the Fahrenheit button
         $('#Fahrenheit').click(function() {
           var temp = $('#thetemp').html();
           var fahr = Math.round(temp * 9 / 5 + 32);
@@ -117,13 +117,13 @@ $('#thesymbol').addClass(iconClass());
           $('#thetemp').html(fahr);
           $('#Fahrenheit').addClass('active');
           $('#Celsius').removeClass('active');
-          $('#Celsius').insertAfter('#Fahrenheit')
+          $('#Celsius').insertAfter('#Fahrenheit');
           }
         });
-        
 
-        
-        
+
+
+
       });
 
     }
