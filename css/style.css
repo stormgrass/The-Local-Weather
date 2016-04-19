@@ -1,143 +1,111 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
 @import url(https://fonts.googleapis.com/css?family=Ubuntu);
-@import url(https://fonts.googleapis.com/css?family=Lato);
 
 body {
-  font-family: Ubuntu;
-
-  color: #404040;
-  margin-top: 50px;
-
+    font-family: Ubuntu;
+    color: #404040;
+    background-color: grey;
+    margin-top: 50px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
-
-
-
 h1 {
-
-  color: white;
-  margin: auto;
-  font-family: Ubuntu;
-  font-size: 18vmin;
-  max-width: 800px;
-  text-align: center;
-
-
+    color: white;
+    margin: auto;
+    font-family: Ubuntu;
+    font-size: 18vmin;
+    max-width: 800px;
+    text-align: center;
 }
-
 .navbar-brand {
-	text-decoration: none;
+    text-decoration: none;
 }
-
-.navbar-brand a  {
-	text-decoration: none;
-	color: #868686;
+.navbar-brand a {
+    text-decoration: none;
+    color: #868686;
 }
-
 .navbar-brand a:hover {
-
-	color: #efefef;
+    color: #efefef;
 }
-
 .navbar {
-  background-color: rgba(64, 64, 64, .8);
-  border-bottom: none;
+    background-color: rgba(64, 64, 64, .8);
+    border-bottom: none;
 }
-
-
 .header {
-  margin: auto;
-  text-align: center;
-
+    margin: auto;
+    text-align: center;
 }
 
 /* the styling of the actual app */
 
 .theapp {
-  background-color: rgba(153, 179, 255, 0.8);
-  padding: 10px 20px 10px 20px;
-  border-radius: 5px;
-  opacity: 0.8;
-  color: #fff;
-  //box-shadow: 10px 10px 3px #888888;
-
+    background-color: rgba(250, 250, 250, 0.7);
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    color: rgb(153, 179, 255);
 }
-
 .thefirstline div {
-  display: inline;
+    display: inline;
 }
-
 #thetime {
-  float: left;
-  margin: auto;
-  font-size: 15px;
+    float: left;
+    margin: auto;
+    font-size: 15px;
 }
-
 #thedate {
-  float: right;
-  margin: auto;
-  font-size: 15px;
+    float: right;
+    margin: auto;
+    font-size: 15px;
 }
-
 .icon {
-  font-size: 1000%;
-  text-align: center;
-  padding: 0px 10px 10px 10px;
-
-  }
-
+    font-size: 1000%;
+    text-align: center;
+    padding: 0px 10px 10px 10px;
+}
 .thesecondline {
-  clear: both;
+    clear: both;
 }
-
 .thesecondline div {
-  display: inline;
+    display: inline;
 }
-
 #thetemp {
-  float: left;
-  font-size: 40px;
+    float: left;
+    font-size: 40px;
 }
-
 #condition {
-  float: right;
-  font-size: 40px;
+    float: right;
+    font-size: 2em;
 }
-
 .location {
-  clear: both;
-  text-align: center;
-  font-size: 30px;
+    clear: both;
+    text-align: center;
+    font-size: 30px;
 }
-
 .switcher {
-  margin-top: 10px;
-  text-align: center;
+    margin-top: 10px;
+    text-align: center;
 }
-
 .active {
-
-  font-size: 25px;
+    font-size: 25px;
 }
-
-
 #Celsius {
-  cursor: pointer;
+    cursor: pointer;
 }
-
 #Fahrenheit {
-  cursor: pointer;
+    cursor: pointer;
 }
-
 hr {
-  border: solid 1px;
-  border-radius: 5px;
+    border: solid 1px;
+    border-radius: 5px;
 }
-
 .clearit {
-  clear: both;
+    clear: both;
 }
-
 .small {
-  color: white;
-  margin-top: 10px;
+    color: white;
+    margin-top: 10px;
+}
+.small a {
+    color: rgb(153, 179, 255);
 }
